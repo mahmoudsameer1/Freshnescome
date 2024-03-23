@@ -1,16 +1,16 @@
 name: Selenium with TestNG - CI
- 
+
 on:
   push:
     branches: [ "main" ]
   pull_request:
     branches: [ "main" ]
- 
+
 jobs:
   build:
- 
+
     runs-on: ubuntu-latest
- 
+
     steps:
     - uses: actions/checkout@v3
     - name: Set up JDK 20
@@ -22,3 +22,18 @@ jobs:
      
     - name: Build with Maven
       run: mvn -B clean test
+
+    - name: Install Allure Command-Line Tool
+      run: |
+        sudo apt-add-repository -y ppa:qameta/allure
+        sudo apt-get update
+        sudo apt-get install allure
+
+    - name: Generate Allure Reports
+      run: allure generate allure-results --clean -o allure-report
+
+    - name: Publish Allure Reports
+      uses: actions/upload-artifact@v2
+      with:
+        name: allure-report
+        path: allure-report
