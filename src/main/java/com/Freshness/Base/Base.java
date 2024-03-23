@@ -25,7 +25,7 @@ public class Base {
 		
 		if (browserName.equalsIgnoreCase("Chrome")) {
 	        ChromeOptions chromeOptions = new ChromeOptions();
-//	        chromeOptions.addArguments("--headless");
+	        chromeOptions.addArguments("--headless");
 	        driver = new ChromeDriver(chromeOptions);
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
 			driver = new FirefoxDriver();

@@ -34,32 +34,32 @@ public class HomePageTest extends Base{
 	    Assert.assertTrue(productFound, "Newly created product not found");
 	}
 	
-//	@Test(priority=2,description="Edit a product and verify it’s edited successfully")
-//	public void editeProduct() throws InterruptedException{
-//	    homepage = new HomePage();
-//	    productPage = new ProductPage();
-//	    homepage.editLastProduct(); // Edit the last added product
-//	    productPage.editProduct();
-//	    boolean productFound = productPage.searchProduct();
-//	    Assert.assertTrue(productFound, "Edited product not found");
-//	}
-//	
-//	@Test(priority=3,description="Delete a product and verify it’s deleted successfully")
-//	public void deleteProduct() throws InterruptedException{
-//		homepage = new HomePage();
-//		homepage.deleteproduct();
-//	}
-//	
-//	
-//	@Test(priority=4,description="Search for a product and verify the search results")
-//	public void searchForOneProduct() throws InterruptedException{
-//		homepage = new HomePage();
-//		homepage.searchForProduct();
-//	}
-//	
-//	@Test(priority=5,description="Use a search keyword that matches multiple products and verify the results")
-//	public void searchproduct() throws InterruptedException {
-//		homepage = new HomePage();
-//		homepage.searchProduct();
-//	}
+	@Test(priority=2,description="Edit a product and verify it’s edited successfully")
+	public void editeProduct() throws InterruptedException{
+	    homepage = new HomePage();
+	    productPage = new ProductPage();
+	    homepage.editLastProduct(); // Edit the last added product
+	    productPage.editProduct();
+	    boolean productFound = productPage.searchProduct();
+	    Assert.assertTrue(productFound, "Edited product not found");
+	}
+	
+	@Test(priority=3,description="Delete a product and verify it’s deleted successfully")
+	public void deleteProduct() throws InterruptedException{
+		homepage = new HomePage();
+		homepage.deleteproduct();
+	}
+	
+	
+	@Test(priority=4,description="Search for a product and verify the search results")
+	public void searchForOneProduct() throws InterruptedException{
+		homepage = new HomePage();
+		homepage.searchForProduct();
+	}
+	
+	@Test(priority=5,description="Use a search keyword that matches multiple products and verify the results")
+	public void searchproduct() throws InterruptedException {
+		homepage = new HomePage();
+		homepage.searchProduct();
+	}
 }
