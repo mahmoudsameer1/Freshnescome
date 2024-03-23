@@ -12,7 +12,6 @@
           <include name="searchproduct"/>
           <include name="createNewProduct"/>
           <include name="searchForOneProduct"/>
-          <include name="loadConfig"/>
         </methods>
       </class> <!-- com.Freshness.HomePageTests.HomePageTest -->
     </classes>

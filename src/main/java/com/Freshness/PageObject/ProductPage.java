@@ -1,5 +1,6 @@
 package com.Freshness.PageObject;
 
+import java.io.File;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -49,8 +50,11 @@ public class ProductPage extends Base{
 	public void createproduct() throws InterruptedException {
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-	    String projectPath = System.getProperty("user.dir");
-	    action.uploadFile(upload_file,projectPath + "\\Jacket.png");
+//	    String projectPath = System.getProperty("user.dir");
+//	    action.uploadFile(upload_file,projectPath + "\\Jacket.png");
+        File file = new File("Jacket.png");
+        String filePath = file.getAbsolutePath();
+		action.uploadFile(upload_file, filePath);
 		action.typestring(title, titletext);
 		action.typestring(description, editedtitletext);
 		action.typestring(price, Price);

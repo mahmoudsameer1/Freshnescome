@@ -2,72 +2,68 @@
 <testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-23T10:39:02 AST" name="Surefire suite" finished-at="2024-03-23T10:40:10 AST" duration-ms="68318">
+  <suite started-at="2024-03-23T10:52:42 AST" name="Surefire suite" finished-at="2024-03-23T10:53:49 AST" duration-ms="67503">
     <groups>
     </groups>
-    <test started-at="2024-03-23T10:39:02 AST" name="Surefire test" finished-at="2024-03-23T10:40:10 AST" duration-ms="68318">
+    <test started-at="2024-03-23T10:52:42 AST" name="Surefire test" finished-at="2024-03-23T10:53:49 AST" duration-ms="67503">
       <class name="com.Freshness.HomePageTests.HomePageTest">
-        <test-method is-config="true" signature="loadConfig()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:02 AST" name="loadConfig" finished-at="2024-03-23T10:39:02 AST" duration-ms="28" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loadConfig -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:02 AST" name="setup" finished-at="2024-03-23T10:39:05 AST" duration-ms="2913" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:52:42 AST" name="setup" finished-at="2024-03-23T10:52:46 AST" duration-ms="4714" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createNewProduct()[pri:1, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:05 AST" name="createNewProduct" description="Add a new product and verify it’s added successfully" finished-at="2024-03-23T10:39:22 AST" duration-ms="16991" status="PASS">
+        <test-method signature="createNewProduct()[pri:1, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:52:47 AST" name="createNewProduct" description="Add a new product and verify it’s added successfully" finished-at="2024-03-23T10:53:03 AST" duration-ms="16333" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:22 AST" name="tearDown" finished-at="2024-03-23T10:39:22 AST" duration-ms="179" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:03 AST" name="tearDown" finished-at="2024-03-23T10:53:03 AST" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:22 AST" name="setup" finished-at="2024-03-23T10:39:24 AST" duration-ms="1499" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:03 AST" name="setup" finished-at="2024-03-23T10:53:04 AST" duration-ms="1318" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="editeProduct()[pri:2, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:24 AST" name="editeProduct" description="Edit a product and verify it’s edited successfully" finished-at="2024-03-23T10:39:47 AST" duration-ms="23877" status="PASS">
+        <test-method signature="editeProduct()[pri:2, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:04 AST" name="editeProduct" description="Edit a product and verify it’s edited successfully" finished-at="2024-03-23T10:53:28 AST" duration-ms="23794" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- editeProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:47 AST" name="tearDown" finished-at="2024-03-23T10:39:48 AST" duration-ms="219" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:28 AST" name="tearDown" finished-at="2024-03-23T10:53:28 AST" duration-ms="83" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:48 AST" name="setup" finished-at="2024-03-23T10:39:49 AST" duration-ms="1644" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:28 AST" name="setup" finished-at="2024-03-23T10:53:30 AST" duration-ms="1413" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="deleteProduct()[pri:3, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:49 AST" name="deleteProduct" description="Delete a product and verify it’s deleted successfully" finished-at="2024-03-23T10:39:56 AST" duration-ms="6256" status="PASS">
+        <test-method signature="deleteProduct()[pri:3, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:30 AST" name="deleteProduct" description="Delete a product and verify it’s deleted successfully" finished-at="2024-03-23T10:53:36 AST" duration-ms="6215" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- deleteProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:56 AST" name="tearDown" finished-at="2024-03-23T10:39:56 AST" duration-ms="135" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:36 AST" name="tearDown" finished-at="2024-03-23T10:53:36 AST" duration-ms="80" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:56 AST" name="setup" finished-at="2024-03-23T10:39:58 AST" duration-ms="2035" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:36 AST" name="setup" finished-at="2024-03-23T10:53:37 AST" duration-ms="1316" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchForOneProduct()[pri:4, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:39:58 AST" name="searchForOneProduct" description="Search for a product and verify the search results" finished-at="2024-03-23T10:40:03 AST" duration-ms="5290" status="PASS">
+        <test-method signature="searchForOneProduct()[pri:4, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:37 AST" name="searchForOneProduct" description="Search for a product and verify the search results" finished-at="2024-03-23T10:53:42 AST" duration-ms="5230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchForOneProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:40:03 AST" name="tearDown" finished-at="2024-03-23T10:40:03 AST" duration-ms="131" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:42 AST" name="tearDown" finished-at="2024-03-23T10:53:42 AST" duration-ms="79" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:40:03 AST" name="setup" finished-at="2024-03-23T10:40:05 AST" duration-ms="1412" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:42 AST" name="setup" finished-at="2024-03-23T10:53:44 AST" duration-ms="1340" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="searchproduct()[pri:5, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:40:05 AST" name="searchproduct" description="Use a search keyword that matches multiple products and verify the results" finished-at="2024-03-23T10:40:10 AST" duration-ms="5421" status="PASS">
+        <test-method signature="searchproduct()[pri:5, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:44 AST" name="searchproduct" description="Use a search keyword that matches multiple products and verify the results" finished-at="2024-03-23T10:53:49 AST" duration-ms="5268" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchproduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@52b1beb6]" started-at="2024-03-23T10:40:10 AST" name="tearDown" finished-at="2024-03-23T10:40:10 AST" duration-ms="103" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@434a63ab]" started-at="2024-03-23T10:53:49 AST" name="tearDown" finished-at="2024-03-23T10:53:49 AST" duration-ms="87" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
