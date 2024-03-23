@@ -50,8 +50,6 @@ public class ProductPage extends Base{
 	public void createproduct() throws InterruptedException {
 		
 		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-//	    String projectPath = System.getProperty("user.dir");
-//	    action.uploadFile(upload_file,projectPath + "\\Jacket.png");
         File file = new File("Jacket.png");
         String filePath = file.getAbsolutePath();
 		action.uploadFile(upload_file, filePath);
