@@ -8,6 +8,7 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeSuite;
 
@@ -18,21 +19,7 @@ public class Base {
 	public static Properties prop;
 	public static WebDriver driver;
 	
-	
-	@BeforeSuite
-	public void loadConfig() {
-		try {
-			prop = new Properties();
-			FileInputStream ip = new FileInputStream(
-					System.getProperty("user.dir") + "\\Configuration\\config.properties");
-			prop.load(ip);
-
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
+	String browserName = "Chrome";
 
 	public static WebDriver getDriver() {
 
@@ -42,10 +29,11 @@ public class Base {
 	public void launchApp() {
 		
 		WebDriverManager.chromedriver().setup();
-		String browserName = prop.getProperty("browser");
 		
 		if (browserName.equalsIgnoreCase("Chrome")) {
-			driver = new ChromeDriver();
+	        ChromeOptions chromeOptions = new ChromeOptions();
+//	        chromeOptions.addArguments("--headless");
+	        driver = new ChromeDriver(chromeOptions);
 		} else if (browserName.equalsIgnoreCase("FireFox")) {
 			driver = new FirefoxDriver();
 		}
