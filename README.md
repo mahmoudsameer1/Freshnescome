@@ -14,7 +14,7 @@ Web browser drivers compatible with Selenium (ChromeDriver, GeckoDriver, etc.).
 IDE (IntelliJ IDEA, Eclipse, etc.) for development (optional).
 
 Setup
-Clone this repository to your local machine: git clone https://github.com/your-username/your-repository.git
+Clone this repository to your local machine: git clone (https://github.com/mahmoudsameer1/Freshnescome.git)
 Navigate to the project directory: cd your-repository
 Install dependencies using Maven: mvn clean install
 Usage
