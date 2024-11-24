@@ -7,7 +7,8 @@
         <methods>
           <include name="tearDown"/>
           <include name="setup"/>
-          <include name="createNewProduct"/>
+          <include name="searchproduct"/>
+          <include name="searchForOneProduct"/>
         </methods>
       </class> <!-- com.Freshness.HomePageTests.HomePageTest -->
     </classes>

@@ -1,26 +1,31 @@
 package com.Freshness.PageObject;
 
 import java.io.File;
+import java.time.Duration;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
+import java.util.stream.Collectors;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.Freshness.actiondriver.Action;
 import com.github.javafaker.Faker;
 import com.Freshness.Base.Base;
 
 public class ProductPage extends Base{
+	
+	public ProductPage() {
+		 PageFactory.initElements(driver, this);
+	}
 
 	Action action = new Action();
-    Faker faker = new Faker();
-	
-    String titletext = faker.lorem().characters(15, 20);
-    String editedtitletext = faker.lorem().characters(31, 40);
-    String Price = Integer.toString(faker.number().numberBetween(31, 99));
 	
 	@FindBy(xpath = "//input[@name='file']")
 	private WebElement upload_file;
@@ -40,46 +45,37 @@ public class ProductPage extends Base{
 	@FindBy(xpath = "//button[@type='submit']")
 	private WebElement submit_button1;
 	
+	@FindBy(xpath = "//button[@class='sc-crozmw jrDktB flex justify-center items-center h-9 w-9 transition ease-in-out delay-150 duration-300']")
+	private List<WebElement> edit_button;
+	
     @FindBy(xpath = "//div[@class='sc-kuWgmH brWvPg mt-4 cursor-pointer']")
 	private List<WebElement> product_titles;
-	
-	public ProductPage() {
-		PageFactory.initElements(driver, this);
-	}
 
-	public void createproduct() throws InterruptedException {
-		
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	public void createproduct(String textTitle,String descriptiontext, String Price) throws InterruptedException {
         File file = new File("Jacket.png");
         String filePath = file.getAbsolutePath();
 		action.uploadFile(upload_file, filePath);
-		action.typestring(title, titletext);
-		action.typestring(description, editedtitletext);
+		action.typestring(title, textTitle);
+		action.typestring(description, descriptiontext);
 		action.typestring(price, Price);
-		Thread.sleep(5000);
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	    wait.until(ExpectedConditions.elementToBeClickable(submit_button));
 		action.click(driver, submit_button);
 	}
 	
-	public boolean searchProduct() throws InterruptedException {
-	    Thread.sleep(10000);
-	    boolean found = false;
-	    for (int i = 0; i < product_titles.size(); i++) {
-	        String result = product_titles.get(i).getText();
-	        if (result.equals(titletext) || result.equals(editedtitletext)) {
-	            found = true;
-	            break;
-	        }
-	    }
-	    return found;
-	}
+//	public void editProduct(String textTitle, String editedTitle) throws InterruptedException {
+//	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+//	    wait.until(driver -> {
+//	        List<String> titles = product_titles.stream().map(WebElement::getText).collect(Collectors.toList());
+//	        return titles.contains(textTitle);
+//	    });
+//	    WebElement lastEditButton = edit_button.get(edit_button.size() - 1);
+//	    action.click(driver, lastEditButton);
+//		Thread.sleep(5000);
+//		title.sendKeys(Keys.chord(Keys.CONTROL, "a"), Keys.DELETE);
+//		action.typestring(title, editedTitle);
+//		action.click(driver, submit_button1);
+//	}
+//}
 
-	public void editProduct() throws InterruptedException {
-	
-		driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-		Thread.sleep(5000);
-		((JavascriptExecutor) driver).executeScript("arguments[0].value = '';", title);
-		action.typestring(title, titletext);
-		Thread.sleep(5000);
-		action.click(driver, submit_button1);
-	}
 }

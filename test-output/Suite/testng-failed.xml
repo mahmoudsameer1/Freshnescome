@@ -2,16 +2,14 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="com.Freshness.HomePageTests.HomePageTest">
         <methods>
-          <include name="deleteProduct"/>
-          <include name="editeProduct"/>
-          <include name="tearDown"/>
           <include name="setup"/>
-          <include name="searchproduct"/>
           <include name="createNewProduct"/>
-          <include name="searchForOneProduct"/>
+          <include name="tearDown"/>
+          <include name="launchApp"/>
         </methods>
       </class> <!-- com.Freshness.HomePageTests.HomePageTest -->
     </classes>
