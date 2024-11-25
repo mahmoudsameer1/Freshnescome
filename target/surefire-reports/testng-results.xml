@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-25T19:28:23 AST" name="Suite" finished-at="2024-11-25T19:29:14 AST" duration-ms="50816">
+  <suite started-at="2024-11-25T20:15:43 AST" name="Suite" finished-at="2024-11-25T20:16:06 AST" duration-ms="23555">
     <groups>
     </groups>
-    <test started-at="2024-11-25T19:28:23 AST" name="Test" finished-at="2024-11-25T19:29:14 AST" duration-ms="50816">
+    <test started-at="2024-11-25T20:15:43 AST" name="Test" finished-at="2024-11-25T20:16:06 AST" duration-ms="23555">
       <class name="com.Freshness.HomePageTests.HomePageTest">
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@2f67a4d3]" started-at="2024-11-25T19:28:23 AST" name="launchApp" finished-at="2024-11-25T19:28:48 AST" duration-ms="25556" status="PASS">
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T20:15:43 AST" name="launchApp" finished-at="2024-11-25T20:15:55 AST" duration-ms="12284" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,31 +18,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@2f67a4d3]" started-at="2024-11-25T19:28:48 AST" name="setup" finished-at="2024-11-25T19:28:48 AST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T20:15:55 AST" name="setup" finished-at="2024-11-25T20:15:55 AST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createNewProduct()[pri:1, instance:com.Freshness.HomePageTests.HomePageTest@2f67a4d3]" started-at="2024-11-25T19:28:48 AST" name="createNewProduct" description="Add a new product and verify it’s added successfully" finished-at="2024-11-25T19:29:10 AST" duration-ms="21917" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
+        <test-method signature="createNewProduct()[pri:1, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T20:15:55 AST" name="createNewProduct" description="Add a new product and verify it’s added successfully" finished-at="2024-11-25T20:16:06 AST" duration-ms="10555" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Expected condition failed: waiting for com.Freshness.PageObject.HomePage$$Lambda$801/0x000002462df57398@7c891ba7 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\MALFAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50750}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50750/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 581beef5426210826468a92d47f9c5f2]]>
+              <![CDATA[Intentional failure for testing purposes. expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.Freshness.PageObject.HomePage$$Lambda$801/0x000002462df57398@7c891ba7 (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.18.1', revision: 'b1d3319b48'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\MALFAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50750}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50750/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 581beef5426210826468a92d47f9c5f2
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at com.Freshness.PageObject.HomePage.searchCreatedProduct(HomePage.java:49)
-at com.Freshness.HomePageTests.HomePageTest.createNewProduct(HomePageTest.java:45)
+              <![CDATA[java.lang.AssertionError: Intentional failure for testing purposes. expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.Freshness.HomePageTests.HomePageTest.createNewProduct(HomePageTest.java:47)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -75,11 +65,11 @@ at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@2f67a4d3]" started-at="2024-11-25T19:29:11 AST" name="tearDown" finished-at="2024-11-25T19:29:14 AST" duration-ms="2561" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T20:16:06 AST" name="tearDown" finished-at="2024-11-25T20:16:06 AST" duration-ms="248" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

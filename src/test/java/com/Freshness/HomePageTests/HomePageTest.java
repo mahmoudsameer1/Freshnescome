@@ -12,7 +12,7 @@ import com.github.javafaker.Faker;
 import com.Freshness.Base.Base;
 import com.Freshness.Utilities.*;
 
-@Listeners({ Listener.class })
+//@Listeners({ Listener.class })
 public class HomePageTest extends Base{
 	
     Faker faker = new Faker();
@@ -42,8 +42,9 @@ public class HomePageTest extends Base{
 	    productPage = new ProductPage();
 	    homepage.createNewProductButton();
 	    productPage.createproduct(textTitle, descriptiontext, Price);
-	    boolean productFound = homepage.searchCreatedProduct(textTitle);
-	    Assert.assertTrue(productFound, "Newly created product not found");
+	    //boolean productFound = homepage.searchCreatedProduct(textTitle);
+	    //Assert.assertTrue(productFound, "Newly created product not found");
+	    Assert.assertTrue(false, "Intentional failure for testing purposes.");
 	}
 	
 	/*
