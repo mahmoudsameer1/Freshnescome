@@ -1,73 +1,89 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-04-13T20:25:49 AST" name="Surefire suite" finished-at="2024-04-13T20:27:10 AST" duration-ms="80765">
+  <suite started-at="2024-11-25T19:28:23 AST" name="Suite" finished-at="2024-11-25T19:29:14 AST" duration-ms="50816">
     <groups>
     </groups>
-    <test started-at="2024-04-13T20:25:49 AST" name="Surefire test" finished-at="2024-04-13T20:27:10 AST" duration-ms="80765">
+    <test started-at="2024-11-25T19:28:23 AST" name="Test" finished-at="2024-11-25T19:29:14 AST" duration-ms="50816">
       <class name="com.Freshness.HomePageTests.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:25:49 AST" name="setup" finished-at="2024-04-13T20:26:06 AST" duration-ms="17150" status="PASS">
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@2f67a4d3]" started-at="2024-11-25T19:28:23 AST" name="launchApp" finished-at="2024-11-25T19:28:48 AST" duration-ms="25556" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApp -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@2f67a4d3]" started-at="2024-11-25T19:28:48 AST" name="setup" finished-at="2024-11-25T19:28:48 AST" duration-ms="9" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createNewProduct()[pri:1, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:06 AST" name="createNewProduct" description="Add a new product and verify it’s added successfully" finished-at="2024-04-13T20:26:14 AST" duration-ms="7835" status="PASS">
+        <test-method signature="createNewProduct()[pri:1, instance:com.Freshness.HomePageTests.HomePageTest@2f67a4d3]" started-at="2024-11-25T19:28:48 AST" name="createNewProduct" description="Add a new product and verify it’s added successfully" finished-at="2024-11-25T19:29:10 AST" duration-ms="21917" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for com.Freshness.PageObject.HomePage$$Lambda$801/0x000002462df57398@7c891ba7 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\MALFAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50750}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50750/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 581beef5426210826468a92d47f9c5f2]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for com.Freshness.PageObject.HomePage$$Lambda$801/0x000002462df57398@7c891ba7 (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '20.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 131.0.6778.86, chrome: {chromedriverVersion: 131.0.6778.85 (3d81e41b6f3a..., userDataDir: C:\Users\MALFAR~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50750}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:50750/devtoo..., se:cdpVersion: 131.0.6778.86, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 581beef5426210826468a92d47f9c5f2
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.Freshness.PageObject.HomePage.searchCreatedProduct(HomePage.java:49)
+at com.Freshness.HomePageTests.HomePageTest.createNewProduct(HomePageTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:14 AST" name="tearDown" finished-at="2024-04-13T20:26:14 AST" duration-ms="236" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:14 AST" name="setup" finished-at="2024-04-13T20:26:22 AST" duration-ms="7309" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="editeProduct()[pri:2, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:22 AST" name="editeProduct" description="Edit a product and verify it’s edited successfully" finished-at="2024-04-13T20:26:30 AST" duration-ms="8080" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- editeProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:30 AST" name="tearDown" finished-at="2024-04-13T20:26:30 AST" duration-ms="210" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:30 AST" name="setup" finished-at="2024-04-13T20:26:38 AST" duration-ms="7981" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="deleteProduct()[pri:3, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:38 AST" name="deleteProduct" description="Delete a product and verify it’s deleted successfully" finished-at="2024-04-13T20:26:42 AST" duration-ms="4524" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:42 AST" name="tearDown" finished-at="2024-04-13T20:26:43 AST" duration-ms="249" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:43 AST" name="setup" finished-at="2024-04-13T20:26:50 AST" duration-ms="7746" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchForOneProduct()[pri:4, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:50 AST" name="searchForOneProduct" description="Search for a product and verify the search results" finished-at="2024-04-13T20:26:56 AST" duration-ms="5400" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchForOneProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:56 AST" name="tearDown" finished-at="2024-04-13T20:26:56 AST" duration-ms="208" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:26:56 AST" name="setup" finished-at="2024-04-13T20:27:04 AST" duration-ms="7723" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="searchproduct()[pri:5, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:27:04 AST" name="searchproduct" description="Use a search keyword that matches multiple products and verify the results" finished-at="2024-04-13T20:27:09 AST" duration-ms="5434" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- searchproduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@33bc72d1]" started-at="2024-04-13T20:27:09 AST" name="tearDown" finished-at="2024-04-13T20:27:10 AST" duration-ms="293" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@2f67a4d3]" started-at="2024-11-25T19:29:11 AST" name="tearDown" finished-at="2024-11-25T19:29:14 AST" duration-ms="2561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.Freshness.HomePageTests.HomePageTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
