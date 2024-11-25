@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-25T20:15:43 AST" name="Suite" finished-at="2024-11-25T20:16:06 AST" duration-ms="23555">
+  <suite started-at="2024-11-25T21:55:24 AST" name="Suite" finished-at="2024-11-25T21:55:33 AST" duration-ms="9199">
     <groups>
     </groups>
-    <test started-at="2024-11-25T20:15:43 AST" name="Test" finished-at="2024-11-25T20:16:06 AST" duration-ms="23555">
+    <test started-at="2024-11-25T21:55:24 AST" name="Test" finished-at="2024-11-25T21:55:33 AST" duration-ms="9199">
       <class name="com.Freshness.HomePageTests.HomePageTest">
-        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T20:15:43 AST" name="launchApp" finished-at="2024-11-25T20:15:55 AST" duration-ms="12284" status="PASS">
+        <test-method is-config="true" signature="launchApp(java.lang.String)[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T21:55:24 AST" name="launchApp" finished-at="2024-11-25T21:55:30 AST" duration-ms="6354" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApp -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T20:15:55 AST" name="setup" finished-at="2024-11-25T20:15:55 AST" duration-ms="9" status="PASS">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T21:55:30 AST" name="setup" finished-at="2024-11-25T21:55:30 AST" duration-ms="3" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="createNewProduct()[pri:1, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T20:15:55 AST" name="createNewProduct" description="Add a new product and verify it’s added successfully" finished-at="2024-11-25T20:16:06 AST" duration-ms="10555" status="FAIL">
+        <test-method signature="createNewProduct()[pri:1, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T21:55:30 AST" name="createNewProduct" description="Add a new product and verify it’s added successfully" finished-at="2024-11-25T21:55:32 AST" duration-ms="2214" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Intentional failure for testing purposes. expected [true] but found [false]]]>
@@ -69,7 +69,7 @@ at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createNewProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T20:16:06 AST" name="tearDown" finished-at="2024-11-25T20:16:06 AST" duration-ms="248" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.Freshness.HomePageTests.HomePageTest@13d73f29]" started-at="2024-11-25T21:55:33 AST" name="tearDown" finished-at="2024-11-25T21:55:33 AST" duration-ms="310" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

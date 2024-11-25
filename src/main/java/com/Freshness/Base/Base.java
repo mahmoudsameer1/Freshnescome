@@ -58,7 +58,7 @@ public class Base {
     // Method to take a screenshot and save it to a file
     public String takeScreenshot(String testName) {
         String timestamp = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date());
-        String screenshotPath = Paths.get(System.getProperty("user.dir"), "screenshots", testName + "_" + timestamp + ".png").toString();
+        String screenshotPath = Paths.get(System.getProperty("user.dir"), "allure-results//screenshots", testName + "_" + timestamp + ".png").toString();
         try {
             TakesScreenshot ts = (TakesScreenshot) driver;
             File source = ts.getScreenshotAs(OutputType.FILE);
